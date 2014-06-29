@@ -51,9 +51,19 @@
 
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="/javascripts/bootstrap-scrollspy.js"></script>
     <title>董宇豪—个人简历</title>
+        <script type="text/javascript">    
+        $(function () {       
+        	$('body').attr('data-spy','scroll');
+        	$('body').attr('data-target',"#navbar-collapse");
+        	$('[data-spy="scroll"]').each(function () {
+        		  var $spy = $(this).scrollspy('refresh')
+        		});
+        }) 
+        </script>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar">
  
 
         <!-- Fixed navbar -->
@@ -70,7 +80,7 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#xinxi">基本信息</a></li>
+                        <li><a href="#xinxi" class="active">基本信息</a></li>
                         <li><a href="#jiaoyu">教育背景</a></li>
                         <li><a href="#jineng">基本技能</a></li>
                         <li><a href="#jingyan">项目经验</a></li>                           
@@ -84,92 +94,92 @@
 
 
 
-    <div class="container" style="margin-top:70px">
+    <div class="container" style="margin-top:70px"  data-spy="scroll" data-target="#navbar-collapse" data-offset="50">
 
             <div class=" jumbotron">
                <img  src="http://dongyuhao.qiniudn.com/2323.jpg" style=" float: right;width:120px;height:160px;position:absolute;right: 30%;"></img>
         <h1>个人简历</h1>
 
-        <p><span class="glyphicon glyphicon-star"></span>性别：男<span class="glyphicon glyphicon-user"></span>居住地：北京 </p>
+        <p><span class="glyphicon glyphicon-star"></span>姓名：董宇豪<span class="glyphicon glyphicon-user"></span>居住地：北京 </p>
 
     </div>
 
 
 
-        <div class="page-header" id="xinxi">
-            <h1>基本信息</h1>
+        <div class="page-header" id="xinxi" style="margin-top:70px">
+            <h1><span class="glyphicon glyphicon-bookmark"></span>基本信息</h1>
         </div>
         <div class="well">
-            <p><span class="glyphicon glyphicon-star"></span>姓名：  年龄：专业： 学校：</p>
-            <p>联系方式：   手机：15810091658 QQ：276986566微信：dongyuhao4869</p>
+            <p><span class="glyphicon glyphicon-bookmark"></span>年龄：24<span class="glyphicon glyphicon-bookmark"></span>专业：软件工程 <span class="glyphicon glyphicon-bookmark"></span>学校：西南石油大学</p>
+            <p><span class="glyphicon glyphicon-bookmark"></span>手机：15810091658 <span class="glyphicon glyphicon-bookmark"></span>QQ：276986566<span class="glyphicon glyphicon-bookmark"></span>微信：dongyuhao4869</p>
         </div>
 
-            <div class="page-header" id="jiaoyu">
-                <h1>工作经验</h1>
+            <div class="page-header" id="jiaoyu" style="margin-top:70px">
+                <h1><span class="glyphicon glyphicon-bookmark"></span>工作经验</h1>
             </div>
             <div class="well">
-                <p><span class="glyphicon glyphicon-star"></span></p>
-                  <p>中石油勘探开发研究院西北分院计算所  2013年~至今</p>
+                <p><span class="glyphicon glyphicon-star"></span>
+                                            中石油勘探开发研究院西北分院计算所  2013年~至今</p>
             </div>
             
-              <div class="page-header" id="jiaoyu">
-                <h1>教育背景</h1>
+              <div class="page-header" id="jiaoyu" style="margin-top:70px">
+                <h1><span class="glyphicon glyphicon-bookmark"></span>教育背景</h1>
             </div>
             <div class="well">
-                <p><span class="glyphicon glyphicon-star"></span>学校：</p>
-                  <p>西南石油大学  2009~2013</p>
-                   <p>曾任：校学生会青志协部长</p>
-                    <p>    校动漫协会副会长</p>
+                <p><span class="glyphicon glyphicon-star"></span>学校：西南石油大学  2009~2013</p>
+                 <p>曾任：校学生会青志协部长</p>
+                    <p>校动漫协会副会长</p></br>
             </div>
 
-            <div class="page-header" id="jineng">
-                <h1>基本技能
+            <div class="page-header" id="jineng" style="margin-top:70px">
+                <h1><span class="glyphicon glyphicon-bookmark"></span>基本技能</h1>
                 </div>
             <div class="well">
-                <p><span class="glyphicon glyphicon-star"></span>※熟悉HTML5/CSS3 。在公司项目中负责前端页面以及JS开发。
-※掌握Visual Studio开发工具，应用C#开发过Windows应用程序，熟悉项目实施中的各个环节及任务分配。
-※掌握JSP技术，使用JSP开发基于Spring， Struts框架的B/S物流管理系统
-※掌握基础SQL Sever语言，可以熟练的进行相关操作。
-※熟悉VSS的文档版本控制以及SVN的代码版本控制
-※了解AJAX,JQuery，并有一定的项目应用经验
-※对软件工程有深入的了解，熟悉软件测试流程，掌握了一些关于软件测试的原理和方法，如黑盒、白盒测试。
-    ※对PhotoShop有一定的熟悉及掌握,曾有两年的为相关人修图经验。
-※对Premiere，After Effects，Corel VideoStudio  , SketchUp有一定的应用经验
-※掌握Power Point，有着较长时间的应用。制作的成果曾在校级播放，曾应用于校级会议，毕业典礼。
+                <p><span class="glyphicon glyphicon-star"></span>
+                ※熟悉HTML5/CSS3 。在公司项目中负责前端页面以及JS开发。</br>
+※掌握Visual Studio开发工具，应用C#开发过Windows应用程序，熟悉项目实施中的各个环节及任务分配。</br>
+※掌握JSP技术，使用JSP开发基于Spring， Struts框架的B/S物流管理系统</br>
+※掌握基础SQL Sever语言，可以熟练的进行相关操作。</br>
+※熟悉VSS的文档版本控制以及SVN的代码版本控制</br>
+※了解AJAX,JQuery，并有一定的项目应用经验</br>
+※对软件工程有深入的了解，熟悉软件测试流程，掌握了一些关于软件测试的原理和方法，如黑盒、白盒测试。</br>
+    ※对PhotoShop有一定的熟悉及掌握,曾有两年的为相关人修图经验。</br>
+※对Premiere，After Effects，Corel VideoStudio  , SketchUp有一定的应用经验</br>
+※掌握Power Point，有着较长时间的应用。制作的成果曾在校级播放，曾应用于校级会议，毕业典礼。</br>
 </p>
             </div>
             
 
-            <div class="page-header" id="jingyan">
-                <h1>项目经验</h1>
+            <div class="page-header" id="jingyan" style="margin-top:70px">
+                <h1><span class="glyphicon glyphicon-bookmark"></span>项目经验</h1>
             </div>
             <div class="well">
-                <p><span class="glyphicon glyphicon-star"></span>※	物流管理系统
-   开发环境：Myeclipse8.5 + SQL Sever2008
-语言：Java
-项目内容：对JQuery初次应用，基于Spring， Struts框架的B/S物流管理系统。为东软实习项目。
-负责部分：担任项目负责人。为小组成员分析项目需求文档，向指导老师提出相关问题。进行小组分工，为小组成员分配相应的模块。
-          使用Dreamweaver设计小组通用页面模板
-          使用Spring， Struts框架，开发JSP后台代码。
-          负责其中的库房管理和分站管理页面及服务控制。
-          使用SVN平台进行小组项目整合及项目提交
-
-※	商品销售管理系统
-开发环境：Visual Studio 2008+SQL Sever2005
-语言：C#
-项目内容：应用于商品的销售记录，库存记录，销售情况总结的简单应用程序。
-负责部分：应用软件的界面设计。数据库与程序的接合部分代码实现。以及登录逻辑设计及代码实现，用户管理代码实现。
-
-※	完井测井数据记录与输出
-开发环境：VisualStudio2010+SQL Sever2008
-语言：C#
-项目内容：对测井数据进行记录，输出。数据的查询及修改。
-负责部分：完井数据记录保存以及相似性验证。不同用户级对其相应权限内容的查询和修改。项目输出：项目内容的WORD输出。
+                <p><span class="glyphicon glyphicon-star"></span>※	物流管理系统</br>
+   开发环境：Myeclipse8.5 + SQL Sever2008</br>
+语言：Java                             </br>
+项目内容：对JQuery初次应用，基于Spring， Struts框架的B/S物流管理系统。为东软实习项目。</br>
+负责部分：担任项目负责人。为小组成员分析项目需求文档，向指导老师提出相关问题。进行小组分工，为小组成员分配相应的模块。</br>
+          使用Dreamweaver设计小组通用页面模板</br>
+          使用Spring， Struts框架，开发JSP后台代码。</br>
+          负责其中的库房管理和分站管理页面及服务控制。</br>
+          使用SVN平台进行小组项目整合及项目提交</br>
+</br>
+※	商品销售管理系统</br>
+开发环境：Visual Studio 2008+SQL Sever2005</br>
+语言：C#</br>
+项目内容：应用于商品的销售记录，库存记录，销售情况总结的简单应用程序。</br>
+负责部分：应用软件的界面设计。数据库与程序的接合部分代码实现。以及登录逻辑设计及代码实现，用户管理代码实现。</br>
+</br>
+※	完井测井数据记录与输出</br>
+开发环境：VisualStudio2010+SQL Sever2008</br>
+语言：C#</br>
+项目内容：对测井数据进行记录，输出。数据的查询及修改。</br>
+负责部分：完井数据记录保存以及相似性验证。不同用户级对其相应权限内容的查询和修改。项目输出：项目内容的WORD输出。</br>
 </p>
             </div>
 
-            <div class="page-header" id="aihao">
-                <h1>个人爱好</h1>
+            <div class="page-header" id="aihao" style="margin-top:70px">
+                <h1><span class="glyphicon glyphicon-bookmark"></span>个人爱好</h1>
             </div>
             <div class="well">
                 <p><span class="glyphicon glyphicon-star"></span>喜欢去了解一些新技术，对新技术资讯，有较敏锐的搜寻力，对视频，图像处理有一定的涉猎。UI设计有一定的接触。</p>
