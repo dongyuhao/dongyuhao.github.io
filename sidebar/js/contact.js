@@ -8,13 +8,13 @@ $(function () {
 			st = document.body.scrollTop;
 		}
 		
-		var contactTop = $(".qust_contach").offset().top;
-		var height = $(".qust_contach").height();
+		var contactTop = $(".sidebarfix").offset().top;
+		var height = $(".sidebarfix").height();
 		
 		if ( st>80) {
 			var top = (document.documentElement.clientHeight  - height)/2+st -80;
 			
-			$(".qust_contach").stop().animate(
+			$(".sidebarfix").stop().animate(
 				{
 					top: top
 				},300,null,function(){
@@ -31,7 +31,7 @@ $(function () {
 			{
 				top=contachTop
 			}
-			$(".qust_contach").stop().animate(
+			$(".sidebarfix").stop().animate(
 				{
 					top: top
 				},300,null,function(){
@@ -88,15 +88,15 @@ $(function () {
 	});
 	
 	$(".qst_close").click(function(){
-		$(".qust_contach").fadeOut(function(){$(".qust_show").fadeIn();});
+		$(".sidebarfix").fadeOut(function(){$(".qust_show").fadeIn();});
 		
 	});
 	$(".qust_show").click(function(){
 		
-		$(".qust_show").fadeOut(function(){$(".qust_contach").fadeIn();});
+		$(".qust_show").fadeOut(function(){$(".sidebarfix").fadeIn();});
 	});
 	$("#toTop").click(function(){
-		$(".qust_contach").stop().animate(
+		$(".sidebarfix").stop().animate(
 			{
 				top: contachTop
 			},300);
