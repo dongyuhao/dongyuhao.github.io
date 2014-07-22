@@ -63,15 +63,27 @@
         }) 
         </script>
         <style type="text/css">
-        .fixed {
-            position: fixed;
-            bottom: 0;
-            right: 0;
-             width: 35px;
-            background-color: white;
-            border: solid #BBBBBB 3px;
-            text-align:center;
+        .sidebarfix {
+             background:#f5f5f5;
+            border:#fff 1px solid;
+            width:125px;
+            padding:1px 5px 10px;
             font-size:12px;
+            line-height:18px;
+            position:absolute;
+            right:5px;
+            top:15px;
+            z-index:9999;
+            text-align: left;
+            -webkit-box-shadow: 0 0px 7px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0 0px 7px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0px 7px rgba(0, 0, 0, 0.3); }
+        }
+        .sidebarfix ul li{
+         border-bottom:#d8d8d8 1px solid;
+            border-top:#fff 1px solid;
+            padding:5px;
+            position:relative ;
         }
         </style>
 </head>
@@ -222,9 +234,11 @@
      </div>
 
 
-<div id="fixed" class="fixed">
-        <a href="index.html"><span class="glyphicon glyphicon-home"></span></br>首页</a>
-        <a href="image.html"><span class="glyphicon glyphicon-camera"></span></br>作品</a>
+<div id="sidebarfix" class="sidebarfix">
+        <ul  style="list-style:none ;padding: 0px;">
+        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></br>首页</a></li>
+        <li><a href="image.html"><span class="glyphicon glyphicon-camera"></span></br>作品</a></li>
+</ul>
 </div>
 
 </body>
